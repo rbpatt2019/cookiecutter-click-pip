@@ -4,14 +4,15 @@ For contributors
 ================
 
 Comments, criticisms, and concerns are always welcome! If you would like to help with development, please follow the steps below.
+This project depends on `Poetry <https://poetry.eustace.io` for all things dependency and development related. Make sure it's installed, or else all this will fail. It's an awesome tool, I highly recommend you check it out!
 
 Clone the repo 
 --------------
 
 .. code:: sh
 
-    git clone https://github.com/{{cookiecutter.user_name}}/{{cookiecutter.project_name}}.git
-    cd {{cookiecutter.project_name}}
+    git clone https://github.com/rbpatt2019/ToDonePy.git
+    cd ToDonePy
 
 Make a new environment
 ----------------------
@@ -20,8 +21,8 @@ Follow your own protocol! I use pyenv for all my env/venv control, so I would do
 
 .. code:: sh
 
-    pyenv virtualenv {{cookiecutter.project_name}}
-    pyenv local {{cookiecutter.project_name}}
+    pyenv virtualenv ToDonePy
+    pyenv local ToDonePy
 
 Regardless of how you do it, run the following once its created:
 
@@ -32,7 +33,7 @@ Regardless of how you do it, run the following once its created:
 Start developing
 ----------------
 
-Checkout the `Makefile <https://github.com/{{cookiecutter.user_name}}/{{cookiecutter.project_name}}/blob/master/Makefile>`_ for lots of useful commands for testing, linting, and many others! Before committing any changes, I'd strongly recommend creating a new branch:
+Checkout the `Makefile <https://github.com/rbpatt2019/ToDonePy/blob/master/Makefile>`_ for lots of useful commands for testing, linting, and many others! Before committing any changes, I'd strongly recommend creating a new branch:
 
 .. code:: sh
 
@@ -45,7 +46,7 @@ Once you're ready to share your changes, fork the repository on github. Then, ad
 
 .. code:: sh
 
-    git remote add origin https://github.com/YOUR_USER/{{cookiecutter.project_name}}.git
+    git remote add origin https://github.com/YOUR_USER/ToDonePy.git
     git push origin new_feature
 
 Finally, open a pull request, and I'll review it as soon as I can!
