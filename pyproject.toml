@@ -5,7 +5,7 @@ description = "A (hopefully) not too opinionated template for developing Click a
 authors = ["rbpatt2019 <ryan.patterson.2015@gmail.com>"]
 license = "GPL-3.0+"
 readme = "README.md"
-repository = "https://github.com/rbpatt2019/cookiecutter-click-pip""
+repository = "https://github.com/rbpatt2019/cookiecutter-click-pip"
 
 [tool.poetry.dependencies]
 python = "^3.5"
