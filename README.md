@@ -4,7 +4,7 @@ A Python cookiecutter template for creating command-line tools.
 
 ## Information
 
-I love command line tools and open-source software, so I create this template for use with future projects. It creates a well-structured - but hopefully not too opinionated - project for developing command line tools using [Click](https://click.palletsprojects.com/en/7.x/). This [cookiecutter](https://cookiecutter.readtehdocs.io) template should handle (nearly) all your project setup for you.
+I love command line tools and open-source software, so I create this template for use with future projects. It creates a well-structured - but hopefully not too opinionated - project for developing command line tools using [Click](https://click.palletsprojects.com/en/7.x/). This [cookiecutter](https://cookiecutter.readtehdocs.io) template should handle (nearly) all your project setup for you, using [poetry](https://eustace.poetry.io).
 
 ## Using the template
 
@@ -33,13 +33,21 @@ cd project_name
 ls
 ```
 
+Poetry uses a pyproject.toml for all of its settings, so let's look at that.
+
+```sh
+cat pyproject.toml
+```
+
+Here is where you can modify any settings for the package that you'd like to. The eagle-eyed among you might have noticed that pytest does not have its own section. Currently, pytest does not parse pyproject.toml for settings, so all options are manually passed to pytest in the Makefile.
+
 I think `make` is the greatest thing since sliced bread, so let's check that out.
 
 ```sh
 cat Makefile
 ```
 
-Some useful commands here to handle everything from linting to version control to packaging. Since we are going to be developing thiss tool, run:
+Some useful commands here to handle everything from linting to version control to packaging. Since we are going to be developing this tool, run:
 
 ```sh
 make develop
