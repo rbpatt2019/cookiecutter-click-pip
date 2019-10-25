@@ -21,10 +21,6 @@ ToDonePY - A basic command-line tast manager
    :target: https://todonepy.readthedocs.io/en/latest/?badge=latest
    :alt: Documentation Status
    
-.. image:: https://pyup.io/repos/github/{{cookiecutter.user_name}}/{{cookiecutter.project_name}}/shield.svg
-   :target: https://pyup.io/repos/github/{{cookiecutter.user_name}}/{{cookiecutter.project_name}}/
-   :alt: Updates
-     
 .. image:: https://img.shields.io/badge/code%20style-black-000000.svg
    :target: https://github.com/ambv/black
    :alt: Codestyle: Black
@@ -53,7 +49,7 @@ Installation
 
 If the project is released on PyPi, tell the world here!
 
-You can install the project manually by cloning the  `repo <https://github.com/{{cookiecutter.user_name}}/{{cookiecutter.project_name}}>`_, and using the included Makefile.
+You can install the project manually by cloning the  `repo <https://github.com/{{cookiecutter.user_name}}/{{cookiecutter.project_name}}>`_, and using the included Makefile. `Poetry <https://eustace.poetry.io` must be installed!
 
 .. code:: sh
 
