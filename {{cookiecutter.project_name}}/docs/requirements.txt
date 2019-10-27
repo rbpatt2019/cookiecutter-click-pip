@@ -1,0 +1,6 @@
+.
+Click==7.0
+Sphinx==2.1.2
+sphinx-click==2.3.0
+sphinxcontrib-fulltoc==1.2
+
