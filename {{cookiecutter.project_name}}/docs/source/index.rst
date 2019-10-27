@@ -6,9 +6,8 @@ Welcome to {{cookiecutter.project_name}}'s documentation!
    :caption: Contents:
    
    Overview <readme.rst>
-   Command-line interface <cli.rst>
+   Modules <modules.rst>
    Contributing to development <contributing.rst>
-   Test information <tests.rst>
 
 
 Indices and tables
