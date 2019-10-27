@@ -46,7 +46,7 @@ Once you're ready to share your changes, fork the repository on github. Then, ad
 
 .. code:: sh
 
-    git remote add origin https://github.com/YOUR_USER/ToDonePy.git
+    git remote add origin https://github.com/YOUR_USER/{{cookiecutter.project_name}}.git
     git push origin new_feature
 
 Finally, open a pull request, and I'll review it as soon as I can!
