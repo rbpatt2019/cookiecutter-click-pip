@@ -1,7 +1,18 @@
 Test Submodules
 ===============
 
-.. toctree::
-   :maxdepth: 4
-   
-   Submodules <tests_submodules.rst>
+Module contents
+---------------
+.. automodule:: tests
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.test\_example
+-------------------
+
+.. automodule:: tests.test_example
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
