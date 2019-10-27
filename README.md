@@ -6,6 +6,10 @@ A Python cookiecutter template for creating command-line tools.
 
 I love command line tools and open-source software, so I create this template for use with future projects. It creates a well-structured - but hopefully not too opinionated - project for developing command line tools using [Click](https://click.palletsprojects.com/en/7.x/). This [cookiecutter](https://cookiecutter.readtehdocs.io) template should handle (nearly) all your project setup for you, using [poetry](https://eustace.poetry.io).
 
+## Heads Up!
+
+You need [poetry](https://eustace.poetry.io) and [travis](https://github.com/travis-ci/travis.rb) installed to complete the setup of this cookiecutter!
+
 ## Using the template
 
 When starting a new project, always create a new virtual environment. I use pyenv for all my env/venv control, so I would do:
@@ -62,6 +66,15 @@ git remote add origin https://github.com/YOUR_USER/project_name
 git push origin master
 ```
 
-The project is designed to coordinate with [Travis CI](https://travis-ci.org), [codecov](https://codecov.io), [readthedocs](https://readthedocs.org), and [pyup](https://pyup.io). All the necessary files are there, you just need to add your new project to their websites, and they should just work.
+The project is designed to coordinate with [Travis CI](https://travis-ci.org), [codecov](https://codecov.io), and  [readthedocs](https://readthedocs.org). All the necessary files are there, so you just need to add your new project to their websites, and codecov and readthedocs should just work. 
+
+Travis needs to know your PyPi password and username to build and publish with poetry. To pass encrypt these and pass them to the `.travis.yml` file, run:
+
+```sh
+travis encrypt PYPI_USER=your_user_name --add env.global
+travis encrypt PYPI_PASS=your_pass_word --add env.global
+```
+
+Now, you should be able to build and stribute with travis, as long as you `git tag` your versions.
 
 Happy Coding!
